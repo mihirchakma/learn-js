@@ -44,3 +44,8 @@ const number = Math.max(10,50,30,90,40)
 const minimum = Math.min(120, 190, 348, 200);
 console.log("The value of minimum is " + minimum + ".");
 
+// Power = Math.pow()
+let power = Math.pow(3, 2);
+// first value is base and second values is exponent 
+console.log(`The value of power is ${power}.`);
+
