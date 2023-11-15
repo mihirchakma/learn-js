@@ -67,5 +67,3 @@ console.log('--------');
 console.log(50 <= 100); // true
 console.log(120 <= 80); // false
 console.log(100 <= 100); // true
-
-console.log('--------');
