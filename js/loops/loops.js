@@ -26,3 +26,20 @@ console.log("My doritos are gone now. I am sad.😔");
 
 
 // for in loop 
+let colors = ["red", "green", "blue", "white", "black"];
+
+for (let i in colors) {
+    console.log(colors[i]);
+}
+
+// for in loop iterating over the properties of an object 
+let person = {
+    name: "Mihir",
+    weight: "150",
+    age: 25
+};
+
+for (let property in person) {
+    console.log(`This person's ${property} is ${person[property]}.`);
+}
+
