@@ -39,3 +39,25 @@ switch (color) {
     console.log("I want to eat Grapes")
 }
 
+
+// Switch Using function
+function getFruitByColor(color) {
+  switch (color) {
+      case "red":
+          return "apple";
+      case "yellow":
+          return "banana";
+      case "orange":
+          return "orange";
+      case "green":
+          return "pear";
+      default:
+         return "grape";
+  }
+}
+
+const favoriteColor = "yellow";
+const fruit = getFruitByColor(favoriteColor);
+
+console.log("I want to eat a " + fruit);
+
