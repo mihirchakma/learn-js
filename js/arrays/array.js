@@ -35,3 +35,35 @@ numbers.sort(function(a, b) {
 
 console.log(numbers);
 
+
+// push - push() 
+const drinks1 = ["water", "juice", "milk", "soda"];
+
+drinks1.push("Tea"); // add "tea" to the end of this array 
+
+console.log(drinks1);
+
+
+// pop - pop() 
+drinks1.pop(); // remove the last item in this array 
+
+console.log(drinks1);
+
+
+// shift - shift() 
+const chocolates = ["Snickers", "Kit-Kat", "Twix"];
+
+const snack = chocolates.shift();
+
+console.log(snack);
+console.log(chocolates);
+
+
+// unshift - unshift() 
+const chocolates_1 = ["Snickers", "Kit-Kat", "Twix"];
+
+const newLength = chocolates_1.unshift("Milky Way", "3 Musketeers");
+
+console.log(newLength);
+console.log(chocolates_1);
+
