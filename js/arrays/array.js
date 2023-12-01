@@ -105,3 +105,10 @@ const foods_1 = ["burger", "pizza", "donut", "bread", "pasta"];
 foods_1.splice(2, 1);
 console.log(foods_1);
 
+
+// Split - split()
+const string = "peanut,butter,jelly,time";
+const array = string.split(",");
+
+console.log(array);
+
