@@ -92,3 +92,16 @@ console.log(slice_1);
 
 const slice_2 = colors.slice(-3);
 console.log(slice_2);
+
+
+// Splice - splice()
+const foods = ["burger", "pizza", "donut", "bread", "pasta"];
+
+foods.splice(2);
+console.log(foods);
+
+const foods_1 = ["burger", "pizza", "donut", "bread", "pasta"];
+
+foods_1.splice(2, 1);
+console.log(foods_1);
+
