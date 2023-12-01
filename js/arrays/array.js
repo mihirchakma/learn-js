@@ -112,3 +112,21 @@ const array = string.split(",");
 
 console.log(array);
 
+
+
+// Join - join()
+const array_1 = ["peanut", "butter", "jelly", "time"];
+const string_1 = array.join(",");
+
+console.log(string_1);
+
+
+
+// indexOf - indexOf() 
+const array_2 = ["Tilted Towers", "Pleasant Park", "Greasy Grove", "Fatal Fields"];
+const index = array_2.indexOf("Greasy Grove");
+const index_1 = array_2.indexOf("Tilted Towers");
+
+
+console.log(index);
+console.log(index_1);
