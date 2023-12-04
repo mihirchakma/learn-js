@@ -146,3 +146,13 @@ console.log(a)
 console.log(b)
 
 
+// Find - find()
+const ages = [43, 24, 37, 28, 49, 68, 63, 21, 63, 79];
+
+function canRetire(number) {
+    return number >= 70;
+}
+
+console.log(ages.find(canRetire));
+console.log(ages.findIndex(canRetire));
+
