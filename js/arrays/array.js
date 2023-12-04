@@ -130,3 +130,19 @@ const index_1 = array_2.indexOf("Tilted Towers");
 
 console.log(index);
 console.log(index_1);
+
+
+// LastIndexOf - lastIndexOf()
+const array_3 = ["Tilted Towers", "Pleasant Park", "Greasy Grove", "Fatal Fields", "Pleasant Park", "Loot Lake"];
+const index_2 = array_3.lastIndexOf("Pleasant Park");
+
+console.log(index_2);
+
+// Includes - Includes() 
+const a = array_3.includes("Tilted Towers");
+const b = array_3.includes("Retail Row");
+
+console.log(a)
+console.log(b)
+
+
