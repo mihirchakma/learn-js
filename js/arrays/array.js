@@ -156,3 +156,20 @@ function canRetire(number) {
 console.log(ages.find(canRetire));
 console.log(ages.findIndex(canRetire));
 
+
+// Reverse - reverse() 
+const cities = ["New York", "Boston", "Los Angeles", "Houston", "Miami", "Chicago"];
+cities.reverse()
+
+console.log(cities);
+
+
+// Every - every()
+const ages_1 = [23, 52, 42, 32, 19]; // add 15 and run again 
+
+function isAnAdult(age) {
+    return age >= 18;
+}
+
+console.log(ages_1.every(isAnAdult));
+
