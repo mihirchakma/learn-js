@@ -173,3 +173,13 @@ function isAnAdult(age) {
 
 console.log(ages_1.every(isAnAdult));
 
+
+// Some - some() 
+const numbers_1 = [64, 23, 86, 38, 47, 119]; // remove 119 and add 32 
+
+function isTripleDigit(number) {
+    return number >= 100;
+}
+
+console.log(numbers_1.some(isTripleDigit));
+
