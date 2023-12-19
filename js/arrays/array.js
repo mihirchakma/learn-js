@@ -212,3 +212,13 @@ const odd = numbers_2.filter(function(number) {
 });
 
 console.log(odd);
+
+
+// Reduce - reduce() -> to sum up all the numbers in an array
+const numbers_3 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const total = numbers_3.reduce(function(total, number) {
+    return total + number;
+});
+
+console.log(`Total number is : ${total}`);
