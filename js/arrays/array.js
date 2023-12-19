@@ -202,3 +202,13 @@ const intros = names.map(function(name) {
 });
 
 console.log(intros);
+
+
+// Filter - filter() 
+const numbers_2 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const odd = numbers_2.filter(function(number) {
+    return number % 2 == 1;
+});
+
+console.log(odd);
