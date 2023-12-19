@@ -183,3 +183,22 @@ function isTripleDigit(number) {
 
 console.log(numbers_1.some(isTripleDigit));
 
+
+// forEach - forEach() 
+const greetings = ["hello", 'hola', 'ciao', 'bonjour'];
+
+function logGreeting(element, index) {
+    console.log(index, element);
+}
+
+greetings.forEach(logGreeting);
+
+
+// Map - map()
+const names = ["Bill", "Alexa", "Devid"];
+
+const intros = names.map(function(name) {
+    return `My name is ${name}`;
+});
+
+console.log(intros);
