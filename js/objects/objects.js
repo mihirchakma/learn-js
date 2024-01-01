@@ -25,7 +25,7 @@ console.log(dog);
 const cat = {
     name: "Fluffy",
     age: 3,
-    bark: function() {
+    sound: function() {
         console.log("MEOW MEOW!");
     }
 };
@@ -47,10 +47,17 @@ console.log(Object.values(cat));
 // Entries - to check all the entries in an object
 const lion = {
     name: "Cooper",
-    age: 3,
-    bark: function () {
+    age: 5,
+    sound: function () {
         console.log("ROAR ROAR");
     }
 };
 
+
+const lionEntries = Object.entries(lion);
+console.log(lionEntries);
+
+for(const [key, value] of Object.entries(lion)) {
+    console.log(`${key} : ${value}`);
+}
 
