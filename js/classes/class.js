@@ -7,7 +7,7 @@ class Pet {
     }
 
     printInfo() {
-        return `Name: ${this.name}, Weight: ${this.weight}, Price: ${this.price}`;
+        return `Hi, my name is ${this.name}, I weight ${this.weight}, and cost $${this.price}.`;
     }
 }
 
@@ -21,3 +21,17 @@ console.log(pet2.printInfo());
 const pet3 = new Pet("Buddy", 30, 3000);
 console.log(pet3.printInfo());
 
+console.log();
+console.log("------------Class Inheritance --------------" );
+
+// Class Inheritance (Subclasses)
+class Dog extends Pet {
+    bark() {
+        console.log("Woof! Woof!");
+    }
+}
+
+const dog = new Dog("Cooper", 50, 5000);
+console.log(dog.printInfo());
+
+dog.bark();
