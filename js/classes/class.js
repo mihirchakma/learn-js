@@ -35,3 +35,31 @@ const dog = new Dog("Cooper", 50, 5000);
 console.log(dog.printInfo());
 
 dog.bark();
+
+
+// Function Overriding and Super Keyword
+class Cat extends Pet {
+    constructor(name, weight, price, brand, color) {
+        super(name, weight, price);
+        this.brand = brand;
+        this.color = color;
+    }
+
+    getFavoriteBrand() {
+        return this.brand;
+    }
+
+    catColor() {
+        return this.color;
+    }
+
+    printInfo() {
+        return `Hi, my name is ${this.name}, I weight ${this.weight}, and cost $${this.price}.`;
+    }
+}
+
+const honey = new Cat("Honey", 10, 1000, "Purina", "White");
+console.log(honey.printInfo());
+console.log(honey.getFavoriteBrand());
+console.log(honey.catColor());
+
