@@ -63,3 +63,16 @@ console.log(honey.printInfo());
 console.log(honey.getFavoriteBrand());
 console.log(honey.catColor());
 
+
+// Private Class Fields 
+class Number {
+    #value = 0;
+
+    increment() {
+        this.#value++;
+    }
+}
+
+const number = new Number();
+console.log(number._value);
+
