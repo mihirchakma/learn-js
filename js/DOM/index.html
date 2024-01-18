@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model - DOM</title>
+</head>
+<body>
+
+    <h1>DOM in JavaScript</h1>
+
+    <div id="apples">Apples taste good.</div>
+    <div class="pears">Pears also taste good.</div>
+    <span>Same goes with oranges.</span>
+
+    <script>
+        const apples = document.querySelector('#apples');
+        const pears = document.querySelector('.pears');
+        const oranges = document.querySelector('span');
+
+        console.log(apples);
+        console.log(pears);
+        console.log(oranges);
+    </script>
+
+    <br><br>
+    <div class="fruits">Apples taste good.</div>
+    <div class="fruits">Pears also taste good.</div>
+    <div class="fruits">Same goes with oranges.</div>
+    <div class="fruits">Banana colors are yellow.</div>
+
+    <script>
+        const fruits = document.querySelectorAll('.fruits');
+        console.log(fruits);
+    </script>
+
+</body>
+</html>
