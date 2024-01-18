@@ -9,10 +9,10 @@
 
     <h1>DOM in JavaScript</h1>
 
+    <!-- Single Elements in DOM-->
     <div id="apples">Apples taste good.</div>
     <div class="pears">Pears also taste good.</div>
     <span>Same goes with oranges.</span>
-
     <script>
         const apples = document.querySelector('#apples');
         const pears = document.querySelector('.pears');
@@ -22,16 +22,44 @@
         console.log(pears);
         console.log(oranges);
     </script>
-
     <br><br>
+    
+    <!-- Multiple Elements in DOM-->
     <div class="fruits">Apples taste good.</div>
     <div class="fruits">Pears also taste good.</div>
     <div class="fruits">Same goes with oranges.</div>
     <div class="fruits">Banana colors are yellow.</div>
-
     <script>
         const fruits = document.querySelectorAll('.fruits');
         console.log(fruits);
+    </script>
+    <br><br>
+
+    <!-- Creating Elements in DOM-->
+    <span>Today's date is </span>
+    <script>
+        const span = document.createElement('span');
+        span.setAttribute('class', 'date');
+        span.textContent = new Date().toDateString();
+        document.body.appendChild(span);
+    </script>
+    <br><br>
+
+    <!-- Removing Elements in DOM -->
+    <div class="parent">
+        <span class="kid">I am a child person</span><br>
+        <span class="teen">I am a teen person</span>
+    </div>
+    <script>
+        const parent = document.querySelector('.parent');
+
+        // Method 1
+        const child = document.querySelector('.kid');
+        parent.removeChild(child);
+
+        // Method 2
+        const teen = document.querySelector('.teen');
+        teen.parentNode.removeChild(teen);
     </script>
 
 </body>
