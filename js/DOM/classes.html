@@ -6,8 +6,32 @@
     <title>Classes, Properties, Attributes, Styles</title>
 </head>
 <body>
-    <div class="apple">Apples are tasty.</div>
+    <div class="apple">Apples are tasty.</div><br>
 
     <script src="classes.js"></script>
+
+    <!-- Setting Properties -->
+    <a href="">Click here to go to Rust-lang.org</a><br><br>
+    <script>
+        const link = document.querySelector('a');
+        link.href = "https://www.rust-lang.org/"
+    </script>
+
+    <!-- Getting Properties -->
+    <input type="text" class="username"><br><br>
+    <span>Halloween is my favorite holiday.</span>
+    <script>
+        const usernameInput = document.querySelector('.username');
+        const usernameValue = usernameInput.value;
+
+        console.log(usernameValue);
+
+        const span = document.querySelector('span');
+        span.holiday = "Halloween";
+
+        console.log(span.holiday);
+    </script>
+
+    <!-- Deleting Properties -->
 </body>
 </html>
